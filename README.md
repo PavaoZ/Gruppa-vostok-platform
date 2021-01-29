@@ -1,0 +1,1 @@
+# Gruppa-vostok-platform
