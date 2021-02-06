@@ -10,7 +10,7 @@
         "production": "mix --production"
     },
     "devDependencies": {
-        "axios": "^0.21",
+        "axios": "^0.21.1",
         "bootstrap": "^4.0.0",
         "jquery": "^3.2",
         "laravel-mix": "^6.0.6",
@@ -23,5 +23,12 @@
         "vue": "^2.5.17",
         "vue-loader": "^15.9.5",
         "vue-template-compiler": "^2.6.10"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.34",
+        "@fortawesome/free-solid-svg-icons": "^5.15.2",
+        "@fortawesome/vue-fontawesome": "^2.0.2",
+        "vue-axios": "^3.2.3",
+        "vue-i18n": "^8.22.4"
     }
 }
