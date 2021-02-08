@@ -1,13 +1,8 @@
-import VueAxios from 'vue-axios';
-import axios from 'axios';
+import VueAxios from 'vue-axios'
+import axios from 'axios'
 import VueI18n from 'vue-i18n'
-
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-// import { faFighterJet } from '@fortawesome/free-solid-svg-icons'
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-// library.add(faCoffee, faFighterJet)
+import i18n from '../../src/i18n'
+import CountryFlag from 'vue-country-flag'
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -22,10 +17,8 @@ window.Vue = require('vue').default;
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-// Icons
-// Vue.component('font-awesome-icon', FontAwesomeIcon)
-
 // Vue components
+Vue.component('country-flag', CountryFlag)
 Vue.component('NavbarWeb', require('./Components/Web/Navbar/Navbar.vue').default);
 Vue.component('ContentWeb', require('./Components/Web/Content/Content.vue').default);
 Vue.component('FooterWeb', require('./Components/Web/Footer/Footer.vue').default);
@@ -41,4 +34,5 @@ Vue.use(VueAxios, axios);
 
 const app = new Vue({
     el: '#app',
+    i18n,
 });

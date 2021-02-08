@@ -1,66 +1,93 @@
 <template>
     <div class="navbar-main-container">
-        <div class="navbar-index-image-navigation">
-            <a href="/">
-                <img class="navbar-index-image" src="/assets/images/gruppa-vostok-transparent.png" alt="Website logo">
-                <div class="navbar-title">Группа Восток</div>
-            </a>
-        </div>
-        <div class="navbar-navigation-list-container">
-            <div class="navbar-navigation-list-item" v-for="(item, index) in list" :key="index">
-                <a href="/">
-                    {{ item.name }} 
-                    <img class="navbar-navigation-list-item-icon" :src="item.location" :alt="item.alt">
-                </a>
-            </div>
-        </div>
-        <div class="navbar-profile-container">
-            {{ $t('profile') }}
-        </div>
+        <logo-container />
+        <navigation :menu_items="list" item_direction="row" />
+        <menu-container :selectedLanguage="selectedLanguage" :languages="flags" @open-sidebar="openSidebar()" />
+        <sidebar :menu_items="list" :selectedLanguage="selectedLanguage" :languages="flags" id="navbar-side-menu" />
     </div>
 </template>
 
 <script>
+import LanguageSelector from './Partials/LanguageSelector'
+import Navigation from './Partials/Navigation'
+import MenuContainer from './Partials/Menu'
+import LogoContainer from './Partials/LogoContainer.vue'
+import Sidebar from './Partials/Sidebar.vue'
+
 export default {
     name: "Navbar",
+    components: {
+        LanguageSelector,
+        Navigation,
+        MenuContainer,
+        LogoContainer,
+        Sidebar,
+    },    
     props: {
-
+        menu_items: {
+            type: Array,
+            required: false,
+            default: () => [],
+        },
+        flagsa: {
+            type: Array,
+            required: false,
+            default: () => [],
+        },
     },
     data() {
         return {
+            // Ovo ce biti kroz sesiju setano svakako
+            selectedLanguage: {
+                flag: 'ba',
+                language: 'Local'
+            },
+            flags: [
+                {
+                    flag: 'ba',
+                    language: 'Local'
+                },
+                {
+                    flag: 'gb-eng',
+                    language: 'English'
+                },
+                {
+                    flag: 'hr',
+                    language: 'Hrv'
+                }
+            ],
             list: [
                 {
                     name: 'Home',
-                    icon: 'fighter-jet',
                     location: '/assets/icons/military/010-tent.svg'
                 },
                 {
                     name: 'About',
-                    icon: 'fighter-jet',
                     location: '/assets/icons/military/insignia.svg'
                 },
                 {
                     name: 'Equipment',
-                    icon: 'fighter-jet',
                     location: '/assets/icons/military/helmet.svg'
                 },
                 {
                     name: 'Members',
-                    icon: 'fighter-jet',
                     location: '/assets/icons/military/soldier.svg'
                 },
                 {
                     name: 'Latest updates',
-                    icon: 'fighter-jet',
                     location: '/assets/icons/military/radar.svg'
                 },
                 {
                     name: 'Contact us',
-                    icon: 'coffee',
                     location: '/assets/icons/military/walkie-talkie.svg'
                 },
             ]
         }
+    },
+    methods: {
+        openSidebar() {
+            document.getElementById('navbar-side-menu').style.width = '250px';
+        },
     }
 }
 </script>
@@ -73,78 +100,6 @@ export default {
     justify-content: space-between;
     background-image: url('/assets/images/black_camo_image1.jpg');
     background-size: cover;
-    .navbar-index-image-navigation {
-        display: flex;
-        a {
-            text-decoration: none;
-            display: flex;
-            .navbar-title {
-                height: 100%;
-                color: #FFF;
-                font-size: 20px;
-                display: flex;
-                padding: 10px;
-                align-items: center;
-                box-sizing: border-box;
-                -webkit-transition: 0.5s;
-                -moz-transition: 0.5s;
-                -ms-transition: 0.5s;
-                -o-transition: 0.5s;
-                transition: 0.5s;
-            }
-            .navbar-title:hover {
-                color: #ff6600;
-            }
-            .navbar-index-image {
-                height: 50px;
-            }
-        }
-    }
-    .navbar-navigation-list-container {
-        display: none;
-        .navbar-navigation-list-item {
-            display: flex;
-            align-items: center;
-            color: #FFF;
-            font-size: 20px;
-            padding: 10px;
-            box-sizing: border-box;
-            a {
-                text-decoration: none;
-                color: inherit;
-                -webkit-transition: 0.5s;
-                -moz-transition: 0.5s;
-                -ms-transition: 0.5s;
-                -o-transition: 0.5s;
-                transition: 0.5s;
-                .navbar-navigation-list-item-icon {
-                    height: 25px;
-                    filter: invert(42%) sepia(82%) saturate(2902%) hue-rotate(4deg) brightness(105%) contrast(105%);
-                }
-            }
-            a:hover {
-                color: #ff6600;
-            }
-        }
-    }
-    .navbar-profile-container {
-        color: #FFF;
-        font-size: 20px;
-        padding: 10px;
-        box-sizing: border-box;
-        display: flex;
-        cursor: pointer;
-
-
-        -webkit-transition: 0.5s;
-        -moz-transition: 0.5s;
-        -ms-transition: 0.5s;
-        -o-transition: 0.5s;
-        transition: 0.5s;
-    }
-    .navbar-profile-container:hover {
-        color: #ff6600;
-    }
 }
 
 // @media media type and (condition: breakpoint) {
@@ -180,8 +135,6 @@ export default {
 }
 
 @media (min-width: 1201px) {
-    .navbar-main-container .navbar-navigation-list-container {
-        display: flex;
-    }
+
 }
 </style>

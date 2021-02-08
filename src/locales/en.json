@@ -1,0 +1,9 @@
+{
+  "navbar": {
+    "profile": "Profile",
+    "menu": "Menu",
+    "club": {
+      "name": "Группа Восток"
+    }
+  }
+}
