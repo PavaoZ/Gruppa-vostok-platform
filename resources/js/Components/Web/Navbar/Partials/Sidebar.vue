@@ -6,8 +6,15 @@
         <slot-item class="language-slot slot-item">
             <language-selector :selectedLanguage="selectedLanguage" :languages="languages" size="big" />
         </slot-item>
+        <slot-item>
+            <text-item text='navbar.profile' />
+        </slot-item>
         <slot-item class="slot-item">
             <navigation :menu_items="menu_items" item_direction="column" />
+        </slot-item>
+        <slot-item>
+            <text-item text='navbar.login.login' />
+            <text-item text='navbar.logout.logout' />
         </slot-item>
     </div>
 </template>
@@ -16,6 +23,8 @@
 import LanguageSelector from './LanguageSelector'
 import SlotItem from './SidebarSlotItem'
 import Navigation from './Navigation'
+import Profile from './Profile'
+import TextItem from '../../../Partials/TextItem'
 
 export default {
     name: 'Sidebar',
@@ -23,6 +32,8 @@ export default {
         LanguageSelector,
         SlotItem,
         Navigation,
+        Profile,
+        TextItem,
     },
     props: {
         selectedLanguage: {
@@ -58,6 +69,10 @@ export default {
     right: 0;
     background-color: #111;
     overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     color: #FFF;
     .navbar-side-menu-close-container {
@@ -73,6 +88,10 @@ export default {
     .slot-item {
         display: block;
     }
+}
+
+.navbar-side-menu::-webkit-scrollbar {
+    display: none;
 }
 
 @media (min-width: 481px) {

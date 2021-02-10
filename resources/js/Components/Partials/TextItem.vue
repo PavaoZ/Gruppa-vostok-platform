@@ -1,8 +1,8 @@
 <template>
-    <div class="profile-container">
-        <a href="/">
+    <div class="text-container">
+        <a :href="destinationUrl">
             <span>
-                {{ $t('navbar.profile') }}
+                {{ $t(text) }}
             </span>
         </a>
     </div>
@@ -11,11 +11,22 @@
 <script>
 export default {
     name: 'Profile',
+    props: {
+        text: {
+            type: String,
+            required: false,
+        },
+        destinationUrl: {
+            type: String,
+            required: false,
+            default: '/'
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
-.profile-container {
+.text-container {
     padding: 10px;
     font-size: 20px;
     :first-child {

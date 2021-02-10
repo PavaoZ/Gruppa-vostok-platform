@@ -1,9 +1,11 @@
 {
-    "navbar": {
-      "profile": "Profil",
-      "menu": "Meni",
-      "club": {
-        "name": "Группа Восток"
-      }
+  "navbar": {
+    "profile": "Profil",
+    "menu": "Meni",
+    "login": "Login",
+    "Logout": "Logout",
+    "club": {
+      "name": "Группа Восток"
     }
   }
+}

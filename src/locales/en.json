@@ -1,6 +1,13 @@
 {
   "navbar": {
     "profile": "Profile",
+    "login": {
+      "login": "Login"
+    },
+    "logout": {
+      "logout": "Logout"
+    },
+    "Logout": "Logout",
     "menu": "Menu",
     "club": {
       "name": "Группа Восток"
