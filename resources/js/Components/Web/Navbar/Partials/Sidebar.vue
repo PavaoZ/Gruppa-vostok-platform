@@ -94,6 +94,12 @@ export default {
     display: none;
 }
 
+@media (max-width: 480px) {
+    .language-slot {
+        display: block !important;
+    }
+}
+
 @media (min-width: 481px) {
     .language-slot {
         display: none !important;

@@ -1,6 +1,6 @@
 <template>
     <div class="navbar-menu-container">
-        <language-selector :selectedLanguage="selectedLanguage" :languages="languages" />
+        <language-selector class="menu-language-container" :selectedLanguage="selectedLanguage" :languages="languages" />
         <div class="navbar-profile-container" @click="openSidebar()">
             {{ $t('navbar.menu') }}
         </div>
@@ -55,6 +55,12 @@ export default {
     }
     .navbar-profile-container:hover .navbar-side-menu {
         width: 250px !important;
+    }
+}
+
+@media (max-width: 481px) {
+    .menu-language-container {
+        display: none !important;
     }
 }
 </style>

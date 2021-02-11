@@ -44,6 +44,7 @@ export default {
 
 <style lang="scss" scoped>
 .navbar-language-container {
+    display: block;
     position: relative;
     padding: 10px;
     cursor: pointer;
@@ -106,12 +107,6 @@ export default {
 
     100% {
         opacity: 1;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar-language-container {
-        display: none !important;
     }
 }
 </style>
