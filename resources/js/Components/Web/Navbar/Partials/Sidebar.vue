@@ -3,14 +3,14 @@
         <div class="navbar-side-menu-close-container">
             <img class="navbar-side-menu-close-button" src="/assets/icons/random/cancel-button.svg" @click="closeSidebar()" />
         </div>
-        <slot-item class="language-slot slot-item">
+        <slot-item class="responsive-mobile-display">
             <language-selector :selectedLanguage="selectedLanguage" :languages="languages" size="big" />
         </slot-item>
         <slot-item>
             <text-item text='navbar.profile' />
         </slot-item>
-        <slot-item class="slot-item">
-            <navigation :menu_items="menu_items" item_direction="column" />
+        <slot-item class="responsive-mobile-display-large">
+            <navigation :menu_items="menu_items" item_direction="column" item_display="flex" />
         </slot-item>
         <slot-item>
             <text-item text='navbar.login.login' />
@@ -54,8 +54,8 @@ export default {
     methods: {
         closeSidebar() {
             document.getElementById('navbar-side-menu').style.width = '0px'
-        }
-    }
+        },
+    },
 }
 </script>
 
@@ -85,9 +85,6 @@ export default {
             cursor: pointer;
         }
     }
-    .slot-item {
-        display: block;
-    }
 }
 
 .navbar-side-menu::-webkit-scrollbar {
@@ -95,13 +92,19 @@ export default {
 }
 
 @media (max-width: 480px) {
-    .language-slot {
+    .responsive-mobile-display {
         display: block !important;
     }
 }
 
 @media (min-width: 481px) {
-    .language-slot {
+    .responsive-mobile-display {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .responsive-mobile-display-large {
         display: none !important;
     }
 }

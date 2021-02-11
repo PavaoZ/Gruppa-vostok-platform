@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar-navigation-list-container" :style="{ 'flex-direction': containerStyleObject }">
+    <div class="navbar-navigation-list-container" :style="{ 'display': containerStyleDisplayObject, 'flex-direction': containerStyleFlexDirectionObject }">
         <div class="navbar-navigation-list-item" v-for="(item, index) in menu_items" :key="index">
             <a href="/">
                 {{ item.name }} 
@@ -22,11 +22,19 @@ export default {
             type: String,
             required: false,
             default: 'row'
+        },
+        item_display: {
+            type: String,
+            required: false,
+            default: 'flex'
         }
     },
     computed: {
-        containerStyleObject: function() {
+        containerStyleFlexDirectionObject: function() {
             return this.item_direction
+        },
+        containerStyleDisplayObject: function() {
+            return this.item_display
         }
     }
 }
@@ -34,7 +42,6 @@ export default {
 
 <style lang="scss" scoped>
 .navbar-navigation-list-container {
-    display: none;
     .navbar-navigation-list-item {
         white-space: nowrap;
         display: flex;
@@ -59,12 +66,6 @@ export default {
         a:hover {
             color: #ff6600;
         }
-    }
-}
-
-@media (min-width: 1201px) {
-    .navbar-navigation-list-container {
-        display: flex;
     }
 }
 </style>

@@ -1,16 +1,16 @@
 <template>
     <div class="navbar-main-container">
         <logo-container />
-        <navigation :menu_items="list" item_direction="row" />
+        <navigation class="responsive-mobile-display-large" :menu_items="list" item_direction="row" item_display="flex" />
         <menu-container :selectedLanguage="selectedLanguage" :languages="flags" @open-sidebar="openSidebar()" />
         <sidebar :menu_items="list" :selectedLanguage="selectedLanguage" :languages="flags" id="navbar-side-menu" />
     </div>
 </template>
 
 <script>
-import LanguageSelector from './Partials/LanguageSelector'
-import Navigation from './Partials/Navigation'
-import MenuContainer from './Partials/Menu'
+import LanguageSelector from './Partials/LanguageSelector.vue'
+import Navigation from './Partials/Navigation.vue'
+import MenuContainer from './Partials/Menu.vue'
 import LogoContainer from './Partials/LogoContainer.vue'
 import Sidebar from './Partials/Sidebar.vue'
 
@@ -22,7 +22,7 @@ export default {
         MenuContainer,
         LogoContainer,
         Sidebar,
-    },    
+    },
     props: {
         menu_items: {
             type: Array,
@@ -88,7 +88,7 @@ export default {
         openSidebar() {
             document.getElementById('navbar-side-menu').style.width = '250px';
         },
-    }
+    },
 }
 </script>
 
@@ -134,7 +134,9 @@ export default {
 
 }
 
-@media (min-width: 1201px) {
-
+@media (max-width: 1201px) {
+    .responsive-mobile-display-large {
+        display: none !important;
+    }
 }
 </style>
