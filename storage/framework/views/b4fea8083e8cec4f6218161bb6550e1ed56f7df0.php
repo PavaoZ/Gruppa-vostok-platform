@@ -1,0 +1,1 @@
+adasdasd<?php /**PATH C:\Users\User\Desktop\Gruppa-vostok-platform\resources\views/content/footer.blade.php ENDPATH**/ ?>

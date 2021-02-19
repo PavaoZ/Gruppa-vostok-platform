@@ -1,0 +1,1 @@
+asdasdasd<?php /**PATH C:\Users\User\Desktop\Gruppa-vostok-platform\resources\views/content/header.blade.php ENDPATH**/ ?>
