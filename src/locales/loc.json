@@ -1,0 +1,18 @@
+{
+  "navbar": {
+    "profile": "Profil",
+    "menu": "Meni",
+    "login": {
+      "login": "Login"
+    },
+    "logout": {
+      "logout": "Logout"
+    },
+    "club": {
+      "name": "Группа Восток"
+    }
+  },
+  "footer": {
+    "copyright": "© Группа Восток 2021"
+  }
+}
