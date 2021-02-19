@@ -6,7 +6,7 @@
     <body class="antialiased">
         <div
             id="app" 
-            style="min-height: 100vh; background-image: url('/assets/images/black_camo_image1.jpg'); background-size: cover;"
+            style="position: relative; min-height: 100vh; background-image: url('/assets/images/black_camo_image1.jpg'); background-size: cover;"
         >
             <?php echo $__env->yieldContent('layout'); ?>
         </div>

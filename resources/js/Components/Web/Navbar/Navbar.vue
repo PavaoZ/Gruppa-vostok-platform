@@ -61,27 +61,33 @@ export default {
             list: [
                 {
                     name: 'Home',
-                    location: '/assets/icons/military/010-tent.svg'
+                    location: '/assets/icons/military/010-tent.svg',
+                    url: '/'
                 },
                 {
                     name: 'About',
-                    location: '/assets/icons/military/insignia.svg'
+                    location: '/assets/icons/military/insignia.svg',
+                    url: '/about'
                 },
                 {
                     name: 'Equipment',
-                    location: '/assets/icons/military/helmet.svg'
+                    location: '/assets/icons/military/helmet.svg',
+                    url: '/'
                 },
                 {
                     name: 'Members',
-                    location: '/assets/icons/military/soldier.svg'
+                    location: '/assets/icons/military/soldier.svg',
+                    url: '/'
                 },
                 {
                     name: 'Latest updates',
-                    location: '/assets/icons/military/radar.svg'
+                    location: '/assets/icons/military/radar.svg',
+                    url: '/'
                 },
                 {
                     name: 'Contact us',
-                    location: '/assets/icons/military/walkie-talkie.svg'
+                    location: '/assets/icons/military/walkie-talkie.svg',
+                    url: '/'
                 },
             ]
         }
@@ -100,7 +106,7 @@ export default {
     font-size: 16px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 480px) {

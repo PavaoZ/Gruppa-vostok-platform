@@ -1,7 +1,7 @@
 <template>
     <div class="navbar-navigation-list-container" :style="{ 'display': containerStyleDisplayObject, 'flex-direction': containerStyleFlexDirectionObject }">
         <div class="navbar-navigation-list-item" v-for="(item, index) in menu_items" :key="index">
-            <a href="/">
+            <a :href="item.url">
                 {{ item.name }} 
                 <img class="navbar-navigation-list-item-icon" :src="item.location" :alt="item.alt">
             </a>

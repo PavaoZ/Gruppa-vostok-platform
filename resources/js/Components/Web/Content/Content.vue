@@ -56,7 +56,7 @@ export default {
 
 <style lang="scss" scoped>
 .main-content-container {
-    padding: 0 10% 0 10%;
+    padding: 0 10% 80px 10%;
     color: #FFF;
     font-size: 18px;
     .content-container {
