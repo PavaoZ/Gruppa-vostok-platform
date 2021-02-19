@@ -1,6 +1,6 @@
 <template>
     <div class="navbar-main-container">
-        <logo-container />
+        <logo-container imageSrc="/assets/images/gruppa-vostok-transparent.png" linkHref="/" title="navbar.club.name" />
         <navigation class="responsive-mobile-display-large" :menu_items="list" item_direction="row" item_display="flex" />
         <menu-container :selectedLanguage="selectedLanguage" :languages="flags" @open-sidebar="openSidebar()" />
         <sidebar :menu_items="list" :selectedLanguage="selectedLanguage" :languages="flags" id="navbar-side-menu" />
@@ -42,6 +42,7 @@ export default {
                 flag: 'ba',
                 language: 'Local'
             },
+            // s bekenda ide
             flags: [
                 {
                     flag: 'ba',
@@ -56,6 +57,7 @@ export default {
                     language: 'Hrv'
                 }
             ],
+            // ovo ce s bekenda ici
             list: [
                 {
                     name: 'Home',
@@ -98,25 +100,8 @@ export default {
     font-size: 16px;
     display: flex;
     justify-content: space-between;
-    background-image: url('/assets/images/black_camo_image1.jpg');
-    background-size: cover;
+    margin-bottom: 60px;
 }
-
-// @media media type and (condition: breakpoint) {
-  // CSS rules
-// }
-
-// @media (max-width: 480px) {
-//   .text {
-//     font-size: 16px;
-//   }
-// }
-
-// 320px — 480px: Mobile devices
-// 481px — 768px: iPads, Tablets
-// 769px — 1024px: Small screens, laptops
-// 1025px — 1200px: Desktops, large screens
-// 1201px and more —  Extra large screens, TV
 
 @media (max-width: 480px) {
 

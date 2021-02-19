@@ -3,6 +3,11 @@ import axios from 'axios'
 import VueI18n from 'vue-i18n'
 import i18n from '../../src/i18n'
 import CountryFlag from 'vue-country-flag'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faFacebook, faTwitter, faInstagram)
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -19,9 +24,13 @@ window.Vue = require('vue').default;
 
 // Vue components
 Vue.component('country-flag', CountryFlag)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.component('NavbarWeb', require('./Components/Web/Navbar/Navbar.vue').default);
 Vue.component('ContentWeb', require('./Components/Web/Content/Content.vue').default);
 Vue.component('FooterWeb', require('./Components/Web/Footer/Footer.vue').default);
+// Vue.component('NavbarAdmin', require('./Components/Admin/Navbar/Navbar.vue').default);
+// Vue.component('ContentAdmin', require('./Components/Admin/Content/Content.vue').default);
+// Vue.component('FooterAdmin', require('./Components/Admin/Footer/Footer.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

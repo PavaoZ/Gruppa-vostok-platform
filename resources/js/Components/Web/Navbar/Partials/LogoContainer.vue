@@ -1,8 +1,8 @@
 <template>
     <div class="navbar-index-image-navigation">
-        <a href="/">
-            <img class="navbar-index-image" src="/assets/images/gruppa-vostok-transparent.png" alt="Website logo">
-            <div class="navbar-title">{{ $t('navbar.club.name') }}</div>
+        <a :href="linkHref">
+            <img class="navbar-index-image" :src="imageSrc" alt="Website logo">
+            <div class="navbar-title">{{ $t(title) }}</div>
         </a>
     </div>
 </template>
@@ -10,6 +10,22 @@
 <script>
 export default {
     name: 'Logo',
+    props: {
+        imageSrc: {
+            type: String,
+            required: false,
+            default: '/',
+        },
+        linkHref: {
+            type: String,
+            required: false,
+            default: '/'
+        },
+        title: {
+            type: String,
+            required: true,
+        }
+    },
 }
 </script>
 
