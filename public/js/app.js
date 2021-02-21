@@ -8618,6 +8618,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'LatestUpdates',
@@ -13924,7 +13934,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".main-content-container[data-v-58f51c26] {\n  padding: 0 10% 80px 10%;\n  color: #FFF;\n  font-size: 18px;\n}\n.main-content-container .content-container[data-v-58f51c26] {\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n}\n@media (max-width: 480px) {\n.main-content-container[data-v-58f51c26] {\n    padding: 0%;\n}\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.main-content-container[data-v-58f51c26] {\n    padding: 0 5% 0 5%;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".main-content-container[data-v-58f51c26] {\n  padding: 0 20% 80px 20%;\n  color: #FFF;\n  font-size: 18px;\n}\n.main-content-container .content-container[data-v-58f51c26] {\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n}\n@media (max-width: 480px) {\n.main-content-container[data-v-58f51c26] {\n    padding: 0%;\n}\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.main-content-container[data-v-58f51c26] {\n    padding: 0 5% 0 5%;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -13972,7 +13982,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".equipment-container[data-v-5a2a3557] {\n  display: flex;\n  flex-direction: column;\n  padding: 0 10% 80px 10%;\n  color: #FFF;\n}\n.equipment-container .equipment-pieces-container[data-v-5a2a3557] {\n  margin-top: 50px;\n}\n@media (max-width: 480px) {\n.equipment-container[data-v-5a2a3557] {\n    padding: 0%;\n    padding-bottom: 120px;\n}\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.equipment-container[data-v-5a2a3557] {\n    padding: 0 5% 0 5%;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".equipment-container[data-v-5a2a3557] {\n  display: flex;\n  flex-direction: column;\n  padding: 0 20% 80px 20%;\n  color: #FFF;\n}\n.equipment-container .equipment-pieces-container[data-v-5a2a3557] {\n  margin-top: 50px;\n}\n@media (max-width: 480px) {\n.equipment-container[data-v-5a2a3557] {\n    padding: 0%;\n    padding-bottom: 120px;\n}\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.equipment-container[data-v-5a2a3557] {\n    padding: 0 5% 0 5%;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -14068,7 +14078,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".updates-container[data-v-2b0af181] {\n  color: #FFF;\n  font-size: 20px;\n  padding: 0px 10% 80px 10%;\n}\n.updates-container .update-container-item[data-v-2b0af181] {\n  padding: 40px;\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.updates-container[data-v-2b0af181] {\n    padding: 0 5% 0 5%;\n}\n}\n@media (max-width: 480px) {\n.updates-container[data-v-2b0af181] {\n    padding: 0%;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".updates-container[data-v-2b0af181] {\n  color: #FFF;\n  font-size: 20px;\n  padding: 0px 20% 80px 20%;\n}\n.updates-container .update-container-item[data-v-2b0af181] {\n  padding: 40px 40px 20px 40px;\n  border-bottom: 1px solid #FFF;\n}\n.updates-container .update-container-item .update-head[data-v-2b0af181] {\n  display: flex;\n}\n.updates-container .update-container-item .update-head .update-title[data-v-2b0af181] {\n  font-weight: bold;\n  padding: 0px 10px;\n}\n.updates-container .update-container-item .update-head .update-date[data-v-2b0af181] {\n  padding: 0px 10px;\n  font-size: 14px;\n  display: flex;\n  align-items: center;\n}\n.updates-container .update-container-item .update-description[data-v-2b0af181] {\n  padding: 0px 40px;\n  margin-top: 20px;\n  word-break: break-all;\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.updates-container[data-v-2b0af181] {\n    padding: 0 5% 0 5%;\n}\n}\n@media (max-width: 480px) {\n.updates-container[data-v-2b0af181] {\n    padding: 0%;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -14092,7 +14102,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".members-main-container[data-v-053f5b2d] {\n  display: flex;\n  flex-direction: column;\n  padding: 0 10% 80px 10%;\n  color: #FFF;\n}\n.members-main-container .members-container[data-v-053f5b2d] {\n  margin-top: 50px;\n}\n@media (max-width: 480px) {\n.members-main-container[data-v-053f5b2d] {\n    padding: 0%;\n    padding-bottom: 120px;\n}\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.member-main-container[data-v-053f5b2d] {\n    padding: 0 5% 0 5%;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".members-main-container[data-v-053f5b2d] {\n  display: flex;\n  flex-direction: column;\n  padding: 0 20% 80px 20%;\n  color: #FFF;\n}\n.members-main-container .members-container[data-v-053f5b2d] {\n  margin-top: 50px;\n}\n@media (max-width: 480px) {\n.members-main-container[data-v-053f5b2d] {\n    padding: 0%;\n    padding-bottom: 120px;\n}\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.member-main-container[data-v-053f5b2d] {\n    padding: 0 5% 0 5%;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -51011,7 +51021,21 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "updates-container" }, [
       _c("div", { staticClass: "update-container-item" }, [
-        _vm._v("\n        asdasdasd\n    ")
+        _c("div", { staticClass: "update-head" }, [
+          _c("div", { staticClass: "update-title" }, [
+            _vm._v("\n                WE GOT LEGAL!\n            ")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "update-date" }, [
+            _vm._v("\n                12. 02. 2020\n            ")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "update-description" }, [
+          _vm._v(
+            "\n            askdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskd\n        "
+          )
+        ])
       ])
     ])
   }

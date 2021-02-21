@@ -1,7 +1,17 @@
 <template>
     <div class="updates-container">
         <div class="update-container-item">
-            asdasdasd
+            <div class="update-head">
+                <div class="update-title">
+                    WE GOT LEGAL!
+                </div>
+                <div class="update-date">
+                    12. 02. 2020
+                </div>
+            </div>
+            <div class="update-description">
+                askdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskdaskd
+            </div>
         </div>
     </div>
 </template>
@@ -28,9 +38,28 @@ export default {
 .updates-container {
     color: #FFF;
     font-size: 20px;
-    padding: 0px 10% 80px 10%;
+    padding: 0px 20% 80px 20%;
     .update-container-item {
-        padding: 40px;
+        padding: 40px 40px 20px 40px;
+        border-bottom: 1px solid #FFF;
+        .update-head {
+            display: flex;
+            .update-title {
+                font-weight: bold;
+                padding: 0px 10px;
+            }
+            .update-date {
+                padding: 0px 10px;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+            }
+        }
+        .update-description {
+            padding: 0px 40px;
+            margin-top: 20px;
+            word-break: break-all;
+        }
     }
 }
 

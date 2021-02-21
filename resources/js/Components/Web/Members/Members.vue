@@ -58,7 +58,7 @@ export default {
 .members-main-container {
     display: flex;
     flex-direction: column;
-    padding: 0 10% 80px 10%;
+    padding: 0 20% 80px 20%;
     color: #FFF;
     .members-container {
         margin-top: 50px;
