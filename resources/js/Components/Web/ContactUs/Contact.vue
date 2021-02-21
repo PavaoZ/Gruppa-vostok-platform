@@ -2,19 +2,19 @@
     <div class="contact-container">
         <div class="contact-form-container">
             <form @submit.prevent="submit">
-                 <div class="name-input-field">
+                 <div>
                     <div>{{ $t('contactUs.name') }}</div>
                     <input type="text" @input="form.name = $event.target.value" :placeholder="$t('contactUs.inputName')" />
                 </div>
-                <div class="email-input-field">
+                <div>
                     <div>{{ $t('contactUs.email') }}</div>
                     <input type="text" @input="form.email = $event.target.value" :placeholder="$t('contactUs.inputEmail')" />
                 </div>
-                <div class="description-input-field">
+                <div>
                     <div>{{ $t('contactUs.description') }}</div>
                     <textarea rows="5" cols="60" @input="form.description = $event.target.value" :placeholder="$t('contactUs.inputDescription')"></textarea>
                 </div>
-                <div class="submit-input-field">
+                <div>
                     <input type="submit" :value="$t('contactUs.submit')" />
                 </div>
             </form>
