@@ -38,11 +38,13 @@ export default {
 
 <style lang="scss" scoped>
 .footer-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #FFF;
-    margin-top: 20px;
     padding: 10px;
     .footer-social-container {
         a {
