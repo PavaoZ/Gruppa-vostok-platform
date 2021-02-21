@@ -77,7 +77,7 @@ export default {
                 {
                     name: 'Members',
                     location: '/assets/icons/military/soldier.svg',
-                    url: '/'
+                    url: '/members'
                 },
                 {
                     name: 'Latest updates',
