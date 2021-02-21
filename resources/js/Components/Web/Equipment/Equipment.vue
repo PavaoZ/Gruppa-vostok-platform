@@ -73,7 +73,7 @@ export default {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-    .mequipment-container {
+    .equipment-container {
         padding: 0 5% 0 5%;
     }
 }
