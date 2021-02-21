@@ -19,30 +19,46 @@
                 </div>
             </form>
         </div>
+        <div class="contact-additional-container">
+            {{ contactUsDetails }}
+        </div>
     </div>
 </template>
 
 <script>
 export default {
     name: 'ContactUs',
+    props: {
+        contactUsDetails: {
+            type: String,
+            required: false,
+            default: 'Contact us for exchanging pointers about airsoft, to ask about joining our team and the requirements, to set up a training with our members as a team or to join us for one of our sessions as an individual or just for a cup of coffee! You can also contact us on one of our social media platforms!'
+        }
+    },
     data() {
         return {
+            limitOfDescription: 1000,
             form: {
                 name: null,
                 email: null,
                 description: null,
             },
-            errors: {
-                name: null,
-                email: null,
-                description: null,
-            }
+            errors: null,
         }
     },
     methods: {
         submit() {
             console.log("this is the form data", this.form)
-        }
+        },
+    },
+    created() {
+        // axios
+        // .get('http://127.0.0.1:8000/about-details')
+        // .then(response => (console.log(response.data)))
+
+        // U catchu radimo sve za errore
+        // this.errors = e.data.errors
+        // i onda setamo errore na front dijelu
     }
 }
 </script>
@@ -50,9 +66,8 @@ export default {
 <style lang="scss" scoped>
 .contact-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 56px - 102px);
+    justify-content: space-evenly;
+    padding-bottom: 120px;
     .contact-form-container {
         border-radius: 10px;
         max-width: 500px;
@@ -85,6 +100,29 @@ export default {
                     outline: none;
                 }
             }
+        }
+    }
+    .contact-additional-container {
+        color: #FFF;
+        padding: 100px 20px;
+        font-size: 20px;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        padding-bottom: 120px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contact-container {
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 0px;
+        .contact-additional-container {
+            padding-bottom: 120px;
         }
     }
 }

@@ -8283,26 +8283,40 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'ContactUs',
+  props: {
+    contactUsDetails: {
+      type: String,
+      required: false,
+      "default": 'Contact us for exchanging pointers about airsoft, to ask about joining our team and the requirements, to set up a training with our members as a team or to join us for one of our sessions as an individual or just for a cup of coffee! You can also contact us on one of our social media platforms!'
+    }
+  },
   data: function data() {
     return {
+      limitOfDescription: 1000,
       form: {
         name: null,
         email: null,
         description: null
       },
-      errors: {
-        name: null,
-        email: null,
-        description: null
-      }
+      errors: null
     };
   },
   methods: {
     submit: function submit() {
       console.log("this is the form data", this.form);
     }
+  },
+  created: function created() {// axios
+    // .get('http://127.0.0.1:8000/about-details')
+    // .then(response => (console.log(response.data)))
+    // U catchu radimo sve za errore
+    // this.errors = e.data.errors
+    // i onda setamo errore na front dijelu
   }
 });
 
@@ -13847,7 +13861,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".contact-container[data-v-9be7070e] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: calc(100vh - 56px - 102px);\n}\n.contact-container .contact-form-container[data-v-9be7070e] {\n  border-radius: 10px;\n  max-width: 500px;\n}\n.contact-container .contact-form-container form[data-v-9be7070e] {\n  color: #FFF;\n  display: flex;\n  flex-direction: column;\n  font-weight: bold;\n  font-size: 20px;\n  width: 100%;\n  height: 100%;\n  padding: 20px;\n}\n.contact-container .contact-form-container form div[data-v-9be7070e] {\n  margin-top: 10px;\n}\n.contact-container .contact-form-container form div input[data-v-9be7070e] {\n  width: 100%;\n  border-radius: 5px;\n  padding: 5px;\n  outline: none;\n  color: #FFF;\n  background: #000000;\n}\n.contact-container .contact-form-container form div textarea[data-v-9be7070e] {\n  width: 100%;\n  border-radius: 5px;\n  background: #000000;\n  color: #FFF;\n  padding: 5px;\n  resize: none;\n  outline: none;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".contact-container[data-v-9be7070e] {\n  display: flex;\n  justify-content: space-evenly;\n  padding-bottom: 120px;\n}\n.contact-container .contact-form-container[data-v-9be7070e] {\n  border-radius: 10px;\n  max-width: 500px;\n}\n.contact-container .contact-form-container form[data-v-9be7070e] {\n  color: #FFF;\n  display: flex;\n  flex-direction: column;\n  font-weight: bold;\n  font-size: 20px;\n  width: 100%;\n  height: 100%;\n  padding: 20px;\n}\n.contact-container .contact-form-container form div[data-v-9be7070e] {\n  margin-top: 10px;\n}\n.contact-container .contact-form-container form div input[data-v-9be7070e] {\n  width: 100%;\n  border-radius: 5px;\n  padding: 5px;\n  outline: none;\n  color: #FFF;\n  background: #000000;\n}\n.contact-container .contact-form-container form div textarea[data-v-9be7070e] {\n  width: 100%;\n  border-radius: 5px;\n  background: #000000;\n  color: #FFF;\n  padding: 5px;\n  resize: none;\n  outline: none;\n}\n.contact-container .contact-additional-container[data-v-9be7070e] {\n  color: #FFF;\n  padding: 100px 20px;\n  font-size: 20px;\n  max-width: 500px;\n}\n@media (max-width: 480px) {\n.contact-container[data-v-9be7070e] {\n    padding-bottom: 120px;\n}\n}\n@media (max-width: 1200px) {\n.contact-container[data-v-9be7070e] {\n    align-items: center;\n    flex-direction: column;\n    padding-bottom: 0px;\n}\n.contact-container .contact-additional-container[data-v-9be7070e] {\n    padding-bottom: 120px;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -50566,6 +50580,10 @@ var render = function() {
           ])
         ]
       )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "contact-additional-container" }, [
+      _vm._v("\n        " + _vm._s(_vm.contactUsDetails) + "\n    ")
     ])
   ])
 }
