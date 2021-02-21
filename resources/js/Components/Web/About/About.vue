@@ -1,9 +1,6 @@
 <template>
     <div class="about-container">
         <content-block v-for="(block, index) in contentBlocks" :key="index" :content="block" />
-        <!-- <center-image-container :image="image" />
-        <center-image-container :image="image" />
-        <center-image-container :image="image" /> -->
     </div>
 </template>
 

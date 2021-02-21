@@ -72,7 +72,7 @@ export default {
                 {
                     name: 'Equipment',
                     location: '/assets/icons/military/helmet.svg',
-                    url: '/'
+                    url: '/equipment'
                 },
                 {
                     name: 'Members',
