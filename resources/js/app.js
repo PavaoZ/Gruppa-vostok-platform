@@ -31,6 +31,9 @@ Vue.component('FooterWeb', require('./Components/Web/Footer/Footer.vue').default
 Vue.component('AboutWeb', require('./Components/Web/About/About.vue').default);
 Vue.component('EquipmentWeb', require('./Components/Web/Equipment/Equipment.vue').default);
 Vue.component('MembersWeb', require('./Components/Web/Members/Members.vue').default);
+Vue.component('ContactUsWeb', require('./Components/Web/ContactUs/Contact.vue').default);
+Vue.component('LatestUpdatesWeb', require('./Components/Web/LatestUpdates/LatestUpdates.vue').default);
+
 // Vue.component('NavbarAdmin', require('./Components/Admin/Navbar/Navbar.vue').default);
 // Vue.component('ContentAdmin', require('./Components/Admin/Content/Content.vue').default);
 // Vue.component('FooterAdmin', require('./Components/Admin/Footer/Footer.vue').default);

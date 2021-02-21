@@ -82,12 +82,12 @@ export default {
                 {
                     name: 'Latest updates',
                     location: '/assets/icons/military/radar.svg',
-                    url: '/'
+                    url: '/latest-updates'
                 },
                 {
                     name: 'Contact us',
                     location: '/assets/icons/military/walkie-talkie.svg',
-                    url: '/'
+                    url: '/contact-us'
                 },
             ]
         }

@@ -14,5 +14,14 @@
   },
   "footer": {
     "copyright": "© Группа Восток 2021"
+  },
+  "contactUs": {
+    "name": "Name and lastname",
+    "email": "Email",
+    "description": "Description of request",
+    "inputName": "Enter name and lastname",
+    "inputEmail": "Enter email",
+    "inputDescription": "Enter description of request",
+    "submit": "Submit"
   }
 }
