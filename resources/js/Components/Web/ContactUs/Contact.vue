@@ -67,7 +67,7 @@ export default {
 .contact-container {
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 120px;
+    padding: 120px 0px 120px 0px;
     .contact-form-container {
         border-radius: 10px;
         max-width: 500px;
@@ -120,7 +120,6 @@ export default {
     .contact-container {
         align-items: center;
         flex-direction: column;
-        padding-bottom: 0px;
         .contact-additional-container {
             padding-bottom: 120px;
         }
