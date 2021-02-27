@@ -6,6 +6,7 @@ use App\Http\Controllers\Web\EquipmentController;
 use App\Http\Controllers\Web\IndexController;
 use App\Http\Controllers\Web\LatestUpdatesController;
 use App\Http\Controllers\Web\MembersController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,3 +31,9 @@ Route::get('/members', [MembersController::class, 'index']);
 Route::get('/contact-us', [ContactUsController::class, 'index']);
 
 Route::get('/latest-updates', [LatestUpdatesController::class, 'index']);
+
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+
+// Auth::routes();
+
+// Route::get('/login', [App\Http\Controllers\LoginController::class, 'index']);
