@@ -58,7 +58,7 @@ export default {
         .update-description {
             padding: 0px 40px;
             margin-top: 20px;
-            word-break: break-all;
+            word-break: break-word;
         }
     }
 }

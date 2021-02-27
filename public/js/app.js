@@ -13886,7 +13886,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".about-content-block-container[data-v-899890e8] {\n  padding: 20px;\n  color: #FFF;\n  display: flex;\n  flex-direction: column;\n  max-width: 540px;\n}\n.about-content-block-container .about-content-block-text-container[data-v-899890e8] {\n  padding: 10px;\n  font-size: 20px;\n  word-break: break-all;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".about-content-block-container[data-v-899890e8] {\n  padding: 20px;\n  color: #FFF;\n  display: flex;\n  flex-direction: column;\n  max-width: 540px;\n}\n.about-content-block-container .about-content-block-text-container[data-v-899890e8] {\n  padding: 10px;\n  font-size: 20px;\n  word-break: break-word;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -13934,7 +13934,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".main-content-container[data-v-58f51c26] {\n  padding: 0 20% 80px 20%;\n  color: #FFF;\n  font-size: 18px;\n}\n.main-content-container .content-container[data-v-58f51c26] {\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n}\n@media (max-width: 480px) {\n.main-content-container[data-v-58f51c26] {\n    padding: 0%;\n}\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.main-content-container[data-v-58f51c26] {\n    padding: 0 5% 0 5%;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".main-content-container[data-v-58f51c26] {\n  padding: 0 20% 80px 20%;\n  color: #FFF;\n  font-size: 18px;\n}\n.main-content-container .content-container[data-v-58f51c26] {\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n}\n@media (max-width: 480px) {\n.main-content-container[data-v-58f51c26] {\n    padding: 0% 0% 120px 0%;\n}\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.main-content-container[data-v-58f51c26] {\n    padding: 0 5% 120px 5%;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -13958,7 +13958,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".content-container-item[data-v-7079c313] {\n  padding: 10px 0 10px 0;\n}\n.content-container-item .content-container-item-image[data-v-7079c313] {\n  border-radius: 50%;\n  margin: 0px 30px 0px 30px;\n  max-width: 160px;\n  max-height: 160px;\n  float: left;\n}\n.content-container-item .container-item-content[data-v-7079c313] {\n  margin: 30px 20px 0px 20px;\n  word-break: break-all;\n}\n.content-container-item:nth-child(2n) .content-container-item-image[data-v-7079c313] {\n  float: right;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".content-container-item[data-v-7079c313] {\n  padding: 10px 0 10px 0;\n}\n.content-container-item .content-container-item-image[data-v-7079c313] {\n  border-radius: 50%;\n  margin: 0px 30px 0px 30px;\n  max-width: 160px;\n  max-height: 160px;\n  float: left;\n}\n.content-container-item .container-item-content[data-v-7079c313] {\n  margin: 30px 20px 0px 20px;\n  word-break: break-word;\n}\n.content-container-item:nth-child(2n) .content-container-item-image[data-v-7079c313] {\n  float: right;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -14006,7 +14006,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".equipment-piece-container[data-v-08421546] {\n  padding: 20px;\n  display: flex;\n}\n.equipment-piece-container .equipment-piece-details-container[data-v-08421546] {\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n}\n.equipment-piece-container .equipment-piece-details-container .equipment-piece-name[data-v-08421546] {\n  padding: 5px 5px 5px 10px;\n  font-size: 25px;\n  font-weight: bold;\n  word-break: break-all;\n}\n.equipment-piece-container .equipment-piece-details-container .equipment-piece-description[data-v-08421546] {\n  padding: 5px 5px 5px 10px;\n  font-size: 20px;\n  word-break: break-all;\n}\n@media (max-width: 781px) {\n.equipment-piece-container[data-v-08421546] {\n    flex-direction: column;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".equipment-piece-container[data-v-08421546] {\n  padding: 20px;\n  display: flex;\n}\n.equipment-piece-container .equipment-piece-details-container[data-v-08421546] {\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n}\n.equipment-piece-container .equipment-piece-details-container .equipment-piece-name[data-v-08421546] {\n  padding: 5px 5px 5px 10px;\n  font-size: 25px;\n  font-weight: bold;\n  word-break: break-word;\n}\n.equipment-piece-container .equipment-piece-details-container .equipment-piece-description[data-v-08421546] {\n  padding: 5px 5px 5px 10px;\n  font-size: 20px;\n  word-break: break-word;\n}\n@media (max-width: 781px) {\n.equipment-piece-container[data-v-08421546] {\n    flex-direction: column;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -14030,7 +14030,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".overhead-text-container[data-v-5e141636] {\n  word-break: break-all;\n  text-align: center;\n  font-size: 20px;\n  padding: 10px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".overhead-text-container[data-v-5e141636] {\n  word-break: break-word;\n  text-align: center;\n  font-size: 20px;\n  padding: 10px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -14078,7 +14078,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".updates-container[data-v-2b0af181] {\n  color: #FFF;\n  font-size: 20px;\n  padding: 0px 20% 80px 20%;\n}\n.updates-container .update-container-item[data-v-2b0af181] {\n  padding: 40px 40px 20px 40px;\n  border-bottom: 1px solid #FFF;\n}\n.updates-container .update-container-item .update-head[data-v-2b0af181] {\n  display: flex;\n}\n.updates-container .update-container-item .update-head .update-title[data-v-2b0af181] {\n  font-weight: bold;\n  padding: 0px 10px;\n}\n.updates-container .update-container-item .update-head .update-date[data-v-2b0af181] {\n  padding: 0px 10px;\n  font-size: 14px;\n  display: flex;\n  align-items: center;\n}\n.updates-container .update-container-item .update-description[data-v-2b0af181] {\n  padding: 0px 40px;\n  margin-top: 20px;\n  word-break: break-all;\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.updates-container[data-v-2b0af181] {\n    padding: 0 5% 0 5%;\n}\n}\n@media (max-width: 480px) {\n.updates-container[data-v-2b0af181] {\n    padding: 0%;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".updates-container[data-v-2b0af181] {\n  color: #FFF;\n  font-size: 20px;\n  padding: 0px 20% 80px 20%;\n}\n.updates-container .update-container-item[data-v-2b0af181] {\n  padding: 40px 40px 20px 40px;\n  border-bottom: 1px solid #FFF;\n}\n.updates-container .update-container-item .update-head[data-v-2b0af181] {\n  display: flex;\n}\n.updates-container .update-container-item .update-head .update-title[data-v-2b0af181] {\n  font-weight: bold;\n  padding: 0px 10px;\n}\n.updates-container .update-container-item .update-head .update-date[data-v-2b0af181] {\n  padding: 0px 10px;\n  font-size: 14px;\n  display: flex;\n  align-items: center;\n}\n.updates-container .update-container-item .update-description[data-v-2b0af181] {\n  padding: 0px 40px;\n  margin-top: 20px;\n  word-break: break-word;\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.updates-container[data-v-2b0af181] {\n    padding: 0 5% 0 5%;\n}\n}\n@media (max-width: 480px) {\n.updates-container[data-v-2b0af181] {\n    padding: 0%;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -14126,7 +14126,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".overhead-text-container[data-v-32bee5fa] {\n  word-break: break-all;\n  text-align: center;\n  font-size: 20px;\n  padding: 10px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".overhead-text-container[data-v-32bee5fa] {\n  word-break: break-word;\n  text-align: center;\n  font-size: 20px;\n  padding: 10px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -14150,7 +14150,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".member-container[data-v-2bd83f6b] {\n  padding: 20px;\n  display: flex;\n}\n.member-container .member-details-container[data-v-2bd83f6b] {\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n}\n.member-container .member-details-container .member-name[data-v-2bd83f6b] {\n  padding: 5px 5px 5px 10px;\n  font-size: 25px;\n  font-weight: bold;\n  word-break: break-all;\n}\n.member-container .member-details-container .member-description[data-v-2bd83f6b] {\n  padding: 5px 5px 5px 10px;\n  font-size: 20px;\n  word-break: break-all;\n}\n@media (max-width: 781px) {\n.member-container[data-v-2bd83f6b] {\n    flex-direction: column;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".member-container[data-v-2bd83f6b] {\n  padding: 20px;\n  display: flex;\n}\n.member-container .member-details-container[data-v-2bd83f6b] {\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n}\n.member-container .member-details-container .member-name[data-v-2bd83f6b] {\n  padding: 5px 5px 5px 10px;\n  font-size: 25px;\n  font-weight: bold;\n  word-break: break-word;\n}\n.member-container .member-details-container .member-description[data-v-2bd83f6b] {\n  padding: 5px 5px 5px 10px;\n  font-size: 20px;\n  word-break: break-word;\n}\n@media (max-width: 781px) {\n.member-container[data-v-2bd83f6b] {\n    flex-direction: column;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
