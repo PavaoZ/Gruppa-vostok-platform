@@ -46,16 +46,14 @@ export default {
             flags: [
                 {
                     flag: 'ba',
-                    language: 'Local'
+                    language: 'Local',
+                    language_code: 'loc'
                 },
                 {
                     flag: 'gb-eng',
-                    language: 'English'
+                    language: 'English',
+                    language_code: 'en'
                 },
-                {
-                    flag: 'hr',
-                    language: 'Hrv'
-                }
             ],
             // ovo ce s bekenda ici
             list: [

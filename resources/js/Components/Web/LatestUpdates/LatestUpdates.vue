@@ -34,7 +34,7 @@ export default {
 .updates-container {
     color: #FFF;
     font-size: 20px;
-    padding: 0px 20% 80px 20%;
+    padding: 0 20% 120px 20%;
 }
 
 @media (min-width: 481px) and (max-width: 768px) {

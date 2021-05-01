@@ -1,13 +1,13 @@
 <template>
     <div class="navbar-language-container">
         <div class="navbar-current-language">
-            <div class="navbar-current-language-text">{{ selectedLanguage.language }}</div>
-            <country-flag :country="selectedLanguage.flag" :size="size" />
+            <div class="navbar-current-language-text">{{ selectedLan.language }}</div>
+            <country-flag :country="selectedLan.flag" :size="size" />
         </div>
         <div class="navbar-language-container-dropdown">
-            <div class="navbar-language-dropdown-item" v-for="(country, index) in languageList" :key="index">
-                <div class="navbar-language-dropdown-item-text">{{ country.language }}</div>
-                <country-flag :country='country.flag' :size="size" />
+            <div class="navbar-language-dropdown-item" v-for="(item, index) in languageList" :key="index" @click="$i18n.locale = item.language_code, selectedLan = item">
+                <div class="navbar-language-dropdown-item-text">{{ item.language }}</div>
+                <country-flag :country='item.flag' :size="size" />
             </div>
         </div>
     </div>
@@ -32,13 +32,18 @@ export default {
             default: () => []
         }
     },
+    data() {
+        return {
+            selectedLan: this.selectedLanguage,
+        }
+    },
     computed: {
         languageList: function() {
             return this.languages.filter(item => {
-                return item.flag != this.selectedLanguage.flag
+                return item.flag != this.selectedLan.flag
             })
         }
-    }
+    },
 }
 </script>
 

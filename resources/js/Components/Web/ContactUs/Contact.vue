@@ -4,15 +4,15 @@
             <form @submit.prevent="submit">
                  <div>
                     <div>{{ $t('contactUs.name') }}</div>
-                    <input type="text" @input="form.name = $event.target.value" :placeholder="$t('contactUs.inputName')" />
+                    <input type="text" v-model="form.name" :placeholder="$t('contactUs.inputName')" />
                 </div>
                 <div>
                     <div>{{ $t('contactUs.email') }}</div>
-                    <input type="text" @input="form.email = $event.target.value" :placeholder="$t('contactUs.inputEmail')" />
+                    <input type="text" v-model="form.email" :placeholder="$t('contactUs.inputEmail')" />
                 </div>
                 <div>
                     <div>{{ $t('contactUs.description') }}</div>
-                    <textarea rows="5" cols="60" @input="form.description = $event.target.value" :placeholder="$t('contactUs.inputDescription')"></textarea>
+                    <textarea rows="5" cols="60" v-model="form.description" :placeholder="$t('contactUs.inputDescription')"></textarea>
                 </div>
                 <div>
                     <input type="submit" :value="$t('contactUs.submit')" />
@@ -20,7 +20,7 @@
             </form>
         </div>
         <div class="contact-additional-container">
-            {{ contactUsDetails }}
+            {{ $t('contactUs.page-description') }}
         </div>
     </div>
 </template>
@@ -28,13 +28,6 @@
 <script>
 export default {
     name: 'ContactUs',
-    props: {
-        contactUsDetails: {
-            type: String,
-            required: false,
-            default: 'Contact us for exchanging pointers about airsoft, to ask about joining our team and the requirements, to set up a training with our members as a team or to join us for one of our sessions as an individual or just for a cup of coffee! You can also contact us on one of our social media platforms!'
-        }
-    },
     data() {
         return {
             limitOfDescription: 1000,
@@ -67,7 +60,7 @@ export default {
 .contact-container {
     display: flex;
     justify-content: space-evenly;
-    padding: 120px 0px 120px 0px;
+    padding: 0 0px 120px 0px;
     .contact-form-container {
         border-radius: 10px;
         max-width: 500px;

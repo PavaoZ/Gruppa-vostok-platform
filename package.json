@@ -21,7 +21,8 @@
         "vue-axios": "^3.2.3",
         "vue-country-flag": "^2.0.3",
         "vue-country-flag-next": "^2.0.3",
-        "vue-i18n": "^8.23.0"
+        "vue-i18n": "^8.23.0",
+        "vue-router": "^3.5.1"
     },
     "devDependencies": {
         "axios": "^0.21.1",

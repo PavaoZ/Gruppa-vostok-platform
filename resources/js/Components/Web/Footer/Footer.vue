@@ -24,7 +24,7 @@ export default {
                 },
                 {
                     icon: 'instagram',
-                    link: '/',
+                    link: 'https://www.instagram.com/gruppavostok71/?hl=en',
                 },
                 {
                     icon: 'twitter',

@@ -8288,13 +8288,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'ContactUs',
-  props: {
-    contactUsDetails: {
-      type: String,
-      required: false,
-      "default": 'Contact us for exchanging pointers about airsoft, to ask about joining our team and the requirements, to set up a training with our members as a team or to join us for one of our sessions as an individual or just for a cup of coffee! You can also contact us on one of our social media platforms!'
-    }
-  },
   data: function data() {
     return {
       limitOfDescription: 1000,
@@ -8587,7 +8580,7 @@ __webpack_require__.r(__webpack_exports__);
         link: '/'
       }, {
         icon: 'instagram',
-        link: '/'
+        link: 'https://www.instagram.com/gruppavostok71/?hl=en'
       }, {
         icon: 'twitter',
         link: '/'
@@ -8881,13 +8874,12 @@ __webpack_require__.r(__webpack_exports__);
       // s bekenda ide
       flags: [{
         flag: 'ba',
-        language: 'Local'
+        language: 'Local',
+        language_code: 'loc'
       }, {
         flag: 'gb-eng',
-        language: 'English'
-      }, {
-        flag: 'hr',
-        language: 'Hrv'
+        language: 'English',
+        language_code: 'en'
       }],
       // ovo ce s bekenda ici
       list: [{
@@ -8972,12 +8964,17 @@ __webpack_require__.r(__webpack_exports__);
       }
     }
   },
+  data: function data() {
+    return {
+      selectedLan: this.selectedLanguage
+    };
+  },
   computed: {
     languageList: function languageList() {
       var _this = this;
 
       return this.languages.filter(function (item) {
-        return item.flag != _this.selectedLanguage.flag;
+        return item.flag != _this.selectedLan.flag;
       });
     }
   }
@@ -9388,7 +9385,7 @@ function loadLocaleMessages() {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_i18n__WEBPACK_IMPORTED_MODULE_1__.default({
-  locale: process.env.VUE_APP_I18N_LOCALE || 'en',
+  locale: 'loc',
   fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'en',
   messages: loadLocaleMessages()
 }));
@@ -13949,7 +13946,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".contact-container[data-v-9be7070e] {\n  display: flex;\n  justify-content: space-evenly;\n  padding: 120px 0px 120px 0px;\n}\n.contact-container .contact-form-container[data-v-9be7070e] {\n  border-radius: 10px;\n  max-width: 500px;\n}\n.contact-container .contact-form-container form[data-v-9be7070e] {\n  color: #FFF;\n  display: flex;\n  flex-direction: column;\n  font-weight: bold;\n  font-size: 20px;\n  width: 100%;\n  height: 100%;\n  padding: 20px;\n}\n.contact-container .contact-form-container form div[data-v-9be7070e] {\n  margin-top: 10px;\n}\n.contact-container .contact-form-container form div input[data-v-9be7070e] {\n  width: 100%;\n  border-radius: 5px;\n  padding: 5px;\n  outline: none;\n  color: #FFF;\n  background: #000000;\n}\n.contact-container .contact-form-container form div textarea[data-v-9be7070e] {\n  width: 100%;\n  border-radius: 5px;\n  background: #000000;\n  color: #FFF;\n  padding: 5px;\n  resize: none;\n  outline: none;\n}\n.contact-container .contact-additional-container[data-v-9be7070e] {\n  color: #FFF;\n  padding: 100px 20px;\n  font-size: 20px;\n  max-width: 500px;\n}\n@media (max-width: 480px) {\n.contact-container[data-v-9be7070e] {\n    padding-bottom: 120px;\n}\n}\n@media (max-width: 1200px) {\n.contact-container[data-v-9be7070e] {\n    align-items: center;\n    flex-direction: column;\n}\n.contact-container .contact-additional-container[data-v-9be7070e] {\n    padding-bottom: 120px;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".contact-container[data-v-9be7070e] {\n  display: flex;\n  justify-content: space-evenly;\n  padding: 0 0px 120px 0px;\n}\n.contact-container .contact-form-container[data-v-9be7070e] {\n  border-radius: 10px;\n  max-width: 500px;\n}\n.contact-container .contact-form-container form[data-v-9be7070e] {\n  color: #FFF;\n  display: flex;\n  flex-direction: column;\n  font-weight: bold;\n  font-size: 20px;\n  width: 100%;\n  height: 100%;\n  padding: 20px;\n}\n.contact-container .contact-form-container form div[data-v-9be7070e] {\n  margin-top: 10px;\n}\n.contact-container .contact-form-container form div input[data-v-9be7070e] {\n  width: 100%;\n  border-radius: 5px;\n  padding: 5px;\n  outline: none;\n  color: #FFF;\n  background: #000000;\n}\n.contact-container .contact-form-container form div textarea[data-v-9be7070e] {\n  width: 100%;\n  border-radius: 5px;\n  background: #000000;\n  color: #FFF;\n  padding: 5px;\n  resize: none;\n  outline: none;\n}\n.contact-container .contact-additional-container[data-v-9be7070e] {\n  color: #FFF;\n  padding: 100px 20px;\n  font-size: 20px;\n  max-width: 500px;\n}\n@media (max-width: 480px) {\n.contact-container[data-v-9be7070e] {\n    padding-bottom: 120px;\n}\n}\n@media (max-width: 1200px) {\n.contact-container[data-v-9be7070e] {\n    align-items: center;\n    flex-direction: column;\n}\n.contact-container .contact-additional-container[data-v-9be7070e] {\n    padding-bottom: 120px;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -14021,7 +14018,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".equipment-container[data-v-5a2a3557] {\n  display: flex;\n  flex-direction: column;\n  padding: 0 20% 80px 20%;\n  color: #FFF;\n}\n.equipment-container .equipment-pieces-container[data-v-5a2a3557] {\n  margin-top: 50px;\n}\n@media (max-width: 480px) {\n.equipment-container[data-v-5a2a3557] {\n    padding: 0%;\n    padding-bottom: 120px;\n}\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.equipment-container[data-v-5a2a3557] {\n    padding: 0 5% 0 5%;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".equipment-container[data-v-5a2a3557] {\n  display: flex;\n  flex-direction: column;\n  padding: 0 20% 120px 20%;\n  color: #FFF;\n}\n.equipment-container .equipment-pieces-container[data-v-5a2a3557] {\n  margin-top: 50px;\n}\n@media (max-width: 480px) {\n.equipment-container[data-v-5a2a3557] {\n    padding: 0%;\n    padding-bottom: 120px;\n}\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.equipment-container[data-v-5a2a3557] {\n    padding: 0 5% 0 5%;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -14117,7 +14114,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".updates-container[data-v-2b0af181] {\n  color: #FFF;\n  font-size: 20px;\n  padding: 0px 20% 80px 20%;\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.updates-container[data-v-2b0af181] {\n    padding: 0 5% 0 5%;\n}\n}\n@media (max-width: 480px) {\n.updates-container[data-v-2b0af181] {\n    padding: 0%;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".updates-container[data-v-2b0af181] {\n  color: #FFF;\n  font-size: 20px;\n  padding: 0 20% 120px 20%;\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.updates-container[data-v-2b0af181] {\n    padding: 0 5% 0 5%;\n}\n}\n@media (max-width: 480px) {\n.updates-container[data-v-2b0af181] {\n    padding: 0%;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -14165,7 +14162,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".members-main-container[data-v-053f5b2d] {\n  display: flex;\n  flex-direction: column;\n  padding: 0 20% 80px 20%;\n  color: #FFF;\n}\n.members-main-container .members-container[data-v-053f5b2d] {\n  margin-top: 50px;\n}\n@media (max-width: 480px) {\n.members-main-container[data-v-053f5b2d] {\n    padding: 0%;\n    padding-bottom: 120px;\n}\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.member-main-container[data-v-053f5b2d] {\n    padding: 0 5% 0 5%;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".members-main-container[data-v-053f5b2d] {\n  display: flex;\n  flex-direction: column;\n  padding: 0 20% 120px 20%;\n  color: #FFF;\n}\n.members-main-container .members-container[data-v-053f5b2d] {\n  margin-top: 50px;\n}\n@media (max-width: 480px) {\n.members-main-container[data-v-053f5b2d] {\n    padding: 0%;\n    padding-bottom: 120px;\n}\n}\n@media (min-width: 481px) and (max-width: 768px) {\n.member-main-container[data-v-053f5b2d] {\n    padding: 0 5% 0 5%;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -50843,13 +50840,25 @@ var render = function() {
             _c("div", [_vm._v(_vm._s(_vm.$t("contactUs.name")))]),
             _vm._v(" "),
             _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.form.name,
+                  expression: "form.name"
+                }
+              ],
               attrs: {
                 type: "text",
                 placeholder: _vm.$t("contactUs.inputName")
               },
+              domProps: { value: _vm.form.name },
               on: {
                 input: function($event) {
-                  _vm.form.name = $event.target.value
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.form, "name", $event.target.value)
                 }
               }
             })
@@ -50859,13 +50868,25 @@ var render = function() {
             _c("div", [_vm._v(_vm._s(_vm.$t("contactUs.email")))]),
             _vm._v(" "),
             _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.form.email,
+                  expression: "form.email"
+                }
+              ],
               attrs: {
                 type: "text",
                 placeholder: _vm.$t("contactUs.inputEmail")
               },
+              domProps: { value: _vm.form.email },
               on: {
                 input: function($event) {
-                  _vm.form.email = $event.target.value
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.form, "email", $event.target.value)
                 }
               }
             })
@@ -50875,14 +50896,26 @@ var render = function() {
             _c("div", [_vm._v(_vm._s(_vm.$t("contactUs.description")))]),
             _vm._v(" "),
             _c("textarea", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.form.description,
+                  expression: "form.description"
+                }
+              ],
               attrs: {
                 rows: "5",
                 cols: "60",
                 placeholder: _vm.$t("contactUs.inputDescription")
               },
+              domProps: { value: _vm.form.description },
               on: {
                 input: function($event) {
-                  _vm.form.description = $event.target.value
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.form, "description", $event.target.value)
                 }
               }
             })
@@ -50899,7 +50932,9 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "contact-additional-container" }, [
-      _vm._v("\n        " + _vm._s(_vm.contactUsDetails) + "\n    ")
+      _vm._v(
+        "\n        " + _vm._s(_vm.$t("contactUs.page-description")) + "\n    "
+      )
     ])
   ])
 }
@@ -51446,11 +51481,11 @@ var render = function() {
       { staticClass: "navbar-current-language" },
       [
         _c("div", { staticClass: "navbar-current-language-text" }, [
-          _vm._v(_vm._s(_vm.selectedLanguage.language))
+          _vm._v(_vm._s(_vm.selectedLan.language))
         ]),
         _vm._v(" "),
         _c("country-flag", {
-          attrs: { country: _vm.selectedLanguage.flag, size: _vm.size }
+          attrs: { country: _vm.selectedLan.flag, size: _vm.size }
         })
       ],
       1
@@ -51459,17 +51494,26 @@ var render = function() {
     _c(
       "div",
       { staticClass: "navbar-language-container-dropdown" },
-      _vm._l(_vm.languageList, function(country, index) {
+      _vm._l(_vm.languageList, function(item, index) {
         return _c(
           "div",
-          { key: index, staticClass: "navbar-language-dropdown-item" },
+          {
+            key: index,
+            staticClass: "navbar-language-dropdown-item",
+            on: {
+              click: function($event) {
+                ;(_vm.$i18n.locale = item.language_code),
+                  (_vm.selectedLan = item)
+              }
+            }
+          },
           [
             _c("div", { staticClass: "navbar-language-dropdown-item-text" }, [
-              _vm._v(_vm._s(country.language))
+              _vm._v(_vm._s(item.language))
             ]),
             _vm._v(" "),
             _c("country-flag", {
-              attrs: { country: country.flag, size: _vm.size }
+              attrs: { country: item.flag, size: _vm.size }
             })
           ],
           1
@@ -63886,7 +63930,7 @@ Vue.compile = compileToFunctions;
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse("{\"navbar\":{\"profile\":\"Profile\",\"menu\":\"Menu\",\"login\":{\"login\":\"Login\"},\"logout\":{\"logout\":\"Logout\"},\"club\":{\"name\":\"Группа Восток\"}},\"footer\":{\"copyright\":\"© Группа Восток 2021\"},\"contactUs\":{\"name\":\"Name and lastname\",\"email\":\"Email\",\"description\":\"Description of request\",\"inputName\":\"Enter name and lastname\",\"inputEmail\":\"Enter email\",\"inputDescription\":\"Enter description of request\",\"submit\":\"Submit\"}}");
+module.exports = JSON.parse("{\"navbar\":{\"profile\":\"Profile\",\"menu\":\"Menu\",\"login\":{\"login\":\"Login\"},\"logout\":{\"logout\":\"Logout\"},\"club\":{\"name\":\"Группа Восток\"}},\"footer\":{\"copyright\":\"© Группа Восток 2021\"},\"contactUs\":{\"name\":\"Name and lastname\",\"email\":\"Email\",\"description\":\"Description of request\",\"inputName\":\"Enter name and lastname\",\"inputEmail\":\"Enter email\",\"inputDescription\":\"Enter description of request\",\"submit\":\"Submit\",\"page-description\":\"Contact us for exchanging pointers about airsoft, to ask about joining our team and the requirements, to set up a training with our members as a team or to join us for one of our sessions as an individual or just for a cup of coffee! You can also contact us on one of our social media platforms!\"}}");
 
 /***/ }),
 
@@ -63897,7 +63941,7 @@ module.exports = JSON.parse("{\"navbar\":{\"profile\":\"Profile\",\"menu\":\"Men
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse("{\"navbar\":{\"profile\":\"Profil\",\"menu\":\"Meni\",\"login\":{\"login\":\"Login\"},\"logout\":{\"logout\":\"Logout\"},\"club\":{\"name\":\"Группа Восток\"}},\"footer\":{\"copyright\":\"© Группа Восток 2021\"},\"contactUs\":{\"name\":\"Ime i prezime\",\"email\":\"Email\",\"description\":\"Opis upita\",\"inputName\":\"Unesite ime i prezime\",\"inputEmail\":\"Unesite email\",\"inputDescription\":\"Unesite opis upita\",\"submit\":\"Pošalji\"}}");
+module.exports = JSON.parse("{\"navbar\":{\"profile\":\"Profil\",\"menu\":\"Meni\",\"login\":{\"login\":\"Login\"},\"logout\":{\"logout\":\"Logout\"},\"club\":{\"name\":\"Группа Восток\"}},\"footer\":{\"copyright\":\"© Группа Восток 2021\"},\"contactUs\":{\"name\":\"Ime i prezime\",\"email\":\"Email\",\"description\":\"Opis upita\",\"inputName\":\"Unesite ime i prezime\",\"inputEmail\":\"Unesite email\",\"inputDescription\":\"Unesite opis upita\",\"submit\":\"Pošalji\",\"page-description\":\"Kontaktirajte nas za diskusiju o airsoftu, o načinu uključenja u tim, za dogovor treninga s nama ili samo za šoljicu kafe! Možete nas kontaktirati i preko neke od naših socijalnih medija!\"}}");
 
 /***/ }),
 
