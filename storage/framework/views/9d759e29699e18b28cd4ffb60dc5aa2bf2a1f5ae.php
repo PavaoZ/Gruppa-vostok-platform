@@ -1,0 +1,1 @@
+<script src="<?php echo e(mix('/js/app.js')); ?>"></script><?php /**PATH C:\Users\User\Desktop\Gruppa-vostok-platform\resources\views/includes/scripts.blade.php ENDPATH**/ ?>

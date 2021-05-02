@@ -1,0 +1,28 @@
+{
+  "navbar": {
+    "profile": "Profil",
+    "menu": "Meni",
+    "login": {
+      "login": "Login"
+    },
+    "logout": {
+      "logout": "Logout"
+    },
+    "club": {
+      "name": "Группа Восток"
+    }
+  },
+  "footer": {
+    "copyright": "© Группа Восток 2021"
+  },
+  "contactUs": {
+    "name": "Ime i prezime",
+    "email": "Email",
+    "description": "Opis upita",
+    "inputName": "Unesite ime i prezime",
+    "inputEmail": "Unesite email",
+    "inputDescription": "Unesite opis upita",
+    "submit": "Pošalji",
+    "page-description": "Kontaktirajte nas za diskusiju o airsoftu, o načinu uključenja u tim, za dogovor treninga s nama ili samo za šoljicu kafe! Možete nas kontaktirati i preko neke od naših socijalnih medija!"
+  }
+}

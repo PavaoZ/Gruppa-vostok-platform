@@ -1,0 +1,28 @@
+{
+  "navbar": {
+    "profile": "Profile",
+    "menu": "Menu",
+    "login": {
+      "login": "Login"
+    },
+    "logout": {
+      "logout": "Logout"
+    },
+    "club": {
+      "name": "Группа Восток"
+    }
+  },
+  "footer": {
+    "copyright": "© Группа Восток 2021"
+  },
+  "contactUs": {
+    "name": "Name and lastname",
+    "email": "Email",
+    "description": "Description of request",
+    "inputName": "Enter name and lastname",
+    "inputEmail": "Enter email",
+    "inputDescription": "Enter description of request",
+    "submit": "Submit",
+    "page-description": "Contact us for exchanging pointers about airsoft, to ask about joining our team and the requirements, to set up a training with our members as a team or to join us for one of our sessions as an individual or just for a cup of coffee! You can also contact us on one of our social media platforms!"
+  }
+}
