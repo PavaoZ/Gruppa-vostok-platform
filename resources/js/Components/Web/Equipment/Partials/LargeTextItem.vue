@@ -15,7 +15,7 @@ export default {
 
 <style lang="scss" scoped>
 .overhead-text-container {
-    word-break: break-all;
+    word-break: break-word;
     text-align: center;
     font-size: 20px;
     padding: 10px;

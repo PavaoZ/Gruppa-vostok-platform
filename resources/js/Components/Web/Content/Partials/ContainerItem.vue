@@ -35,7 +35,7 @@ export default {
     }
     .container-item-content {
         margin: 30px 20px 0px 20px;
-        word-break: break-all;
+        word-break: break-word;
     }
 }
 

@@ -56,7 +56,7 @@ export default {
 
 <style lang="scss" scoped>
 .main-content-container {
-    padding: 0 10% 80px 10%;
+    padding: 0 20% 120px 20%;
     color: #FFF;
     font-size: 18px;
     .content-container {
@@ -84,13 +84,13 @@ export default {
 
 @media (max-width: 480px) {
     .main-content-container {
-        padding: 0%;
+        padding: 0% 0% 120px 0%;
     }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
     .main-content-container {
-        padding: 0 5% 0 5%;
+        padding: 0 5% 120px 5%;
     }
 }
 </style>

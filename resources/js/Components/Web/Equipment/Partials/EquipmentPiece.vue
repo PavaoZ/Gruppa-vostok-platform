@@ -41,12 +41,12 @@ export default {
             padding: 5px 5px 5px 10px;
             font-size: 25px;
             font-weight: bold;
-            word-break: break-all;
+            word-break: break-word;
         }
         .equipment-piece-description {
             padding: 5px 5px 5px 10px;
             font-size: 20px;
-            word-break: break-all;
+            word-break: break-word;
         }
     }
 }

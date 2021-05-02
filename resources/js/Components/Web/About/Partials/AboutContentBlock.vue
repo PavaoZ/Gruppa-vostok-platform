@@ -34,7 +34,7 @@ export default {
     .about-content-block-text-container {
         padding: 10px;
         font-size: 20px;
-        word-break: break-all;
+        word-break: break-word;
     }
 }
 </style>

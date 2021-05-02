@@ -46,16 +46,14 @@ export default {
             flags: [
                 {
                     flag: 'ba',
-                    language: 'Local'
+                    language: 'Local',
+                    language_code: 'loc'
                 },
                 {
                     flag: 'gb-eng',
-                    language: 'English'
+                    language: 'English',
+                    language_code: 'en'
                 },
-                {
-                    flag: 'hr',
-                    language: 'Hrv'
-                }
             ],
             // ovo ce s bekenda ici
             list: [
@@ -82,12 +80,12 @@ export default {
                 {
                     name: 'Latest updates',
                     location: '/assets/icons/military/radar.svg',
-                    url: '/'
+                    url: '/latest-updates'
                 },
                 {
                     name: 'Contact us',
                     location: '/assets/icons/military/walkie-talkie.svg',
-                    url: '/'
+                    url: '/contact-us'
                 },
             ]
         }
